@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/rails/actionpack-xml_parser.git
+  revision: 5dc81e9e7476a514091e08c3943ec29201674170
+  specs:
+    actionpack-xml_parser (2.0.0)
+      actionpack (~> 5.x)
+
+GIT
   remote: git://github.com/rails/coffee-rails.git
   revision: 29604a59a5d7ea314f54bb52302d68ef134806bf
   specs:
@@ -101,6 +108,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    libxml-ruby (2.8.0)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
@@ -166,10 +174,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionpack-xml_parser!
   byebug
   coffee-rails!
   jbuilder (~> 2.0)
   jquery-rails
+  libxml-ruby
   listen (~> 3.0.5)
   puma
   rails!
