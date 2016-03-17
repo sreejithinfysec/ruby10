@@ -30,11 +30,9 @@ class UsersController < ApplicationController
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
-        format.xml  { render :xml  => @user.to_xml }
       else
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
-        format.xml  { render xml: @user.errors.to_xml }
       end
     end
   end

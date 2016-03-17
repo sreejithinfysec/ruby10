@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', github: 'rails/rails'
-gem 'actionpack-xml_parser', github: 'rails/actionpack-xml_parser'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
