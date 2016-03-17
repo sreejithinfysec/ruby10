@@ -3,7 +3,7 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @user.name.html_safe %>
+  <%= sanitize(@user.name) %>
 </p>
 
 <p>
